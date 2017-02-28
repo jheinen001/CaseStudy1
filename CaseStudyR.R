@@ -1,7 +1,7 @@
 #############################
 ##CaseStudy1 Project 
 #############################
-### Loading required package:Please install first if you have them
+### Loading required package:Please install first if you dont have them
 library(readr)
 library(dplyr)
 library(ggplot2)
@@ -77,7 +77,7 @@ Avg_GDP <- merge_GDP_EDU %>%
 
 Avg_GDP
 
-
+#Question4
 ggplot(merge_GDP_EDU, aes(y = GDP_Value, x=Income_Group,fill=Income_Group)) + 
   scale_y_log10()+ 
   geom_point(pch = 21, size = 8, stat = "identity", position=position_jitter())+
@@ -92,8 +92,7 @@ table(merge_GDP_EDU$Quantiles, merge_GDP_EDU$Income_Group)
 merge_GDP_EDU[151:189,c(1,2,3,4,7)] %>% 
   filter(Income_Group=="Lower middle income") 
 
-#6 countries
-  
+
 
 
 
