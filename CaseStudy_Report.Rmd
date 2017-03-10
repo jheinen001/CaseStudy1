@@ -10,7 +10,7 @@ output:
 
 ##Introduction
 
-This data projects seeks to explore world world economic and
+This data project seeks to explore world economic and
 social indicators of major countries. In this project, our goal is to carry out an exploratory data analysis using two data set, GDP data and Educational data.This data will be downloaded from the world bank website. Original data set are in the links below 
 
 * [GDP data](http://data.worldbank.org/data-catalog/GDP-ranking-table)
