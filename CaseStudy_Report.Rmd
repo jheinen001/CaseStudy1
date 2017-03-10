@@ -136,7 +136,7 @@ merge_GDP_EDU[151:189,c(1,2,3,4,7)] %>%
 5.**Plot the GDP for all of the countries. Use ggplot2 to color your plot by Income Group.**
 
 In this section, we used some dicretion in plotting our graph, there are about 189 countries in our dataset. It will not be efficient to plot all countries on the X axis therefore we group the countries by income group and plot against GDP.     
-```{r echo=FALSE}
+```{r }
 ggplot(merge_GDP_EDU, aes(y = GDP_Value, x=Income_Group,fill=Income_Group)) + 
   scale_y_log10()+ 
   geom_point(pch = 21, size = 8, stat = "identity", position=position_jitter())+
