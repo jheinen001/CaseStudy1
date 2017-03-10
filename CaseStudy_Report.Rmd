@@ -43,7 +43,7 @@ EduURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FEDSTATS_Countr
 download.file(EduURL, "Edu.csv", quiet=TRUE)
 ```
 
-### Part1:Data Cleaning 
+### Part1...Data Cleaning 
 
 Read files into dataframe. Using the "read_csv" from readr package helps eliminate the need to use stringasFactors= F
 
@@ -135,7 +135,7 @@ merge_GDP_EDU[151:189,c(1,2,3,4,7)] %>%
 ## Part 3...Data Visualization
 5.**Plot the GDP for all of the countries. Use ggplot2 to color your plot by Income Group.**
 
-In this section, we would use some dicretion in plotting our graph, there are about 189 countries in our dataset. It will not be efficient to plot all countries on the X axis therefore we group the countries by income group and plot against GDP.     
+In this section, we used some dicretion in plotting our graph, there are about 189 countries in our dataset. It will not be efficient to plot all countries on the X axis therefore we group the countries by income group and plot against GDP.     
 ```{r echo=FALSE}
 ggplot(merge_GDP_EDU, aes(y = GDP_Value, x=Income_Group,fill=Income_Group)) + 
   scale_y_log10()+ 
