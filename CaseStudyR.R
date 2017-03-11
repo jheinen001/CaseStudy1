@@ -25,7 +25,7 @@ Educ.data <- read_csv("EDU.csv")
 GDP.data <- GDP.data[, c(1, 2, 4, 5)]
 GDP.data <- GDP.data[-c(1:2),]
 #Rename column
-colnames(GDP.data) <- c("Country_Code", "Rank", "Country_Name", "GDP_Value")
+colnames(GDP.data) <- c("Country_Code", "Ranking", "Country_Name", "GDP_Value")
 
 #Examining  our dataset
 head(GDP.data)
